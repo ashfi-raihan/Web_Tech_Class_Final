@@ -1,0 +1,205 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    background-image: radial-gradient(#e0e7e5 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #333;
+    margin: 0;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Centered Form Container */
+  form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fieldset and Legend */
+  fieldset {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fafafa;
+  }
+  
+  legend {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    padding: 0 10px;
+  }
+  
+  /* Label Styling */
+  label {
+    font-weight: 500;
+    color: #4a5568;
+    margin-right: 8px;
+  }
+  
+  /* Styling All Input Fields, Select, and Textarea */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea,
+  input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+  }
+  
+  /* Focus State Highlight */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="number"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+  }
+  
+  /* Radio Button Styling */
+  input[type="radio"] {
+    margin-right: 4px;
+    margin-left: 10px;
+    accent-color: #3182ce;
+  }
+  
+  /* Food Selection Table */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  th {
+    background-color: #edf2f7;
+    color: #2d3748;
+    text-align: left;
+    padding: 12px;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: middle;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Attractive Food Items Highlight */
+  tbody tr {
+    transition: background-color 0.2s;
+  }
+  
+  tbody tr:hover {
+    background-color: #f7fafc;
+  }
+  
+  /* Checkbox and Quantity Styling in Table */
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #38a169;
+    cursor: pointer;
+  }
+  
+  td input[type="number"] {
+    width: 70px;
+    margin: 0;
+  }
+  
+  /* Textarea Specific Styling */
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Validation Errors Display */
+  .error,
+  .error-message,
+  :invalid {
+    border-color: #e53e3e;
+  }
+  
+  .error-text {
+    color: #e53e3e;
+    font-size: 0.85rem;
+    margin-top: 2px;
+    display: block;
+  }
+  
+  /* Form Buttons */
+  input[type="submit"],
+  button {
+    background-color: #3182ce;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  /* Button Hover Effects */
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: #2b6cb0;
+  }
+  
+  input[type="submit"]:active,
+  button:active {
+    transform: scale(0.99);
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 600px) {
+    form {
+      padding: 18px;
+    }
+  
+    fieldset {
+      padding: 12px;
+    }
+  
+    th, td {
+      padding: 8px 6px;
+      font-size: 0.88rem;
+    }
+  
+    td input[type="number"] {
+      width: 55px;
+    }
+  }

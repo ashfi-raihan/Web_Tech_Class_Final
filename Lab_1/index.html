@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <input type="text" name="fname" id="fname" placeholder="Enter Full name">
+            <br><br>
+            <input type="email" name="email" id="email" placeholder="E-mail: xyz@gmail.com">
+            <br><br>
+            <input type="tel" name="phone" id="phone" placeholder="Phone: 01xxxxxxxxx">
+            <br><br>
+            <input type="text" name="sid" id="sid" placeholder="Student ID: xx-xxxxx-xx">
+            <br><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="gender" value="Male"> 
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="gender" value="Female"> 
+            <label for="Female">Female</label>
+            <br><br>
+            <label for="department">Department</label>
+            <select name="department" id="department">
+                <option value="">Select your dept</option>
+                <option value="cse">CSE</option>
+                <option value="eee">EEE</option>
+                <option value="bba">BBA</option>
+                <option value="english">English</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Food Selection</legend>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Select</th>
+                    <th>Food Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" id="burger" name="food" value="Burger"></td>
+                    <td><label for="burger">Burger</label></td>
+                    <td>$5</td>
+                    <td><input type="number" name="quantity_burger" min="1" value="1"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="pizza" name="food" value="Pizza"></td>
+                    <td><label for="pizza">Pizza</label></td>
+                    <td>$8</td>
+                    <td><input type="number" name="quantity_pizza" min="1" value="1"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="sandwich" name="food" value="Sandwich"></td>
+                    <td><label for="sandwich">Sandwich</label></td>
+                    <td>$4</td>
+                    <td><input type="number" name="quantity_sandwich" min="1" value="1"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="fries" name="food" value="French Fries"></td>
+                    <td><label for="fries">French Fries</label></td>
+                    <td>$3</td>
+                    <td><input type="number" name="quantity_fries" min="1" value="1"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="coffee" name="food" value="Coffee"></td>
+                    <td><label for="coffee">Coffee</label></td>
+                    <td>$2</td>
+                    <td><input type="number" name="quantity_coffee" min="1" value="1"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" id="cold_drink" name="food" value="Cold Drink"></td>
+                    <td><label for="cold_drink">Cold Drink</label></td>
+                    <td>$2</td>
+                    <td><input type="number" name="quantity_cold_drink" min="1" value="1"></td>
+                  </tr>
+                </tbody>
+              </table>
+          
+              <br>
+          
+              <label for="instructions"><strong>Special Instructions:</strong></label><br>
+              <textarea id="instructions" name="instructions" rows="4" cols="40" placeholder="Enter any special requests here..."></textarea>
+
+        </fieldset>
+        
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
